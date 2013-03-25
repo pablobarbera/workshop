@@ -48,7 +48,7 @@ classifier <- function(tweets, pos.words, neg.words, keyword){
 }
 
 
-# loading lexicon of positive and negative words
+# loading lexicon of positive and negative words (from Neal Caren)
 lexicon <- read.csv("lexicon.csv", stringsAsFactors=F)
 pos.words <- lexicon$word[lexicon$polarity=="positive"]
 neg.words <- lexicon$word[lexicon$polarity=="negative"]
